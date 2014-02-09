@@ -3,3 +3,7 @@
 *.jpg
 *.doc
 *.docx
+_archive/
+sftp-config.json
+starting.txt
+.DS_Store

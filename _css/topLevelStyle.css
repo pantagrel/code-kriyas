@@ -1,0 +1,21 @@
+body{
+	font-family: monospace;	
+}
+
+a, a:visited{
+
+}
+
+#masthead{
+	margin: 100px auto 50px;
+	width: 315px;
+}
+
+#code-kriyas-list{
+	margin: 0 auto;
+	width: 315px;
+}
+
+p#album-one{
+	margin-top: 50px;
+}
