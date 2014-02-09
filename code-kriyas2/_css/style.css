@@ -1,0 +1,8 @@
+/*code kriyas css sheet, v1*/
+
+body{
+	font-family: monospace;
+}
+p{
+	max-width: 500px;
+}
