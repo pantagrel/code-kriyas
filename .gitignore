@@ -1,5 +1,5 @@
-.psd
-.gif
-.jpg
-.doc
-.docx
+*.psd
+*.gif
+*.jpg
+*.doc
+*.docx
