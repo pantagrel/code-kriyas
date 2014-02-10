@@ -1,21 +1,35 @@
 body{
-	font-family: monospace;	
+	font-size: 1.1em;
+	line-height: 1.35em;
+	margin: 0 auto;
+	font-family: monospace;
 }
 
 a, a:visited{
 
-}
+} 
 
 #masthead{
-	margin: 100px auto 50px;
-	width: 315px;
+	margin: 6em auto 3em;
+	width: 70%;
+	max-width: 500px;
+}
+
+#masthead img{
+	width: 100%;
+	max-width: 500px;
 }
 
 #code-kriyas-list{
 	margin: 0 auto;
-	width: 315px;
+	width: 70%;
+	max-width: 500px; 
 }
 
 p#album-one{
-	margin-top: 50px;
+	margin-top: 3em;
+}
+
+li{
+	margin-top: .8em;
 }
