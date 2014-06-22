@@ -27,4 +27,11 @@ I'm going to record what I learn, both informationally and practically, in a mar
 My website [Ballard Workshop] (http://ballardworkshop.com) will be a catalog of what I learn. Hopefully there will be some evidence of progress in the experiments I post. 
 
 
+__Here's some blow-by-blow details of what I'm learning:__
 
+  1. The website itself focuses on easy-to-access shell for experiemnts. Supports small devices by being more touch friendly as a small size. 
+    + PHP modularization is upcoming. I'll set up includes files for better maintainability. 
+    + I'd like to set up a dynamic array structure that pulls all the files in the code kriyas folder and arranges them by date created. Then I want to use that array to drive 'next' and 'previous' buttons so users can easily scroll through all the experiements instead of having to go back to the index to navigate.
+  1. 'Circles' worked on using a shape library, HTML5 canvas element.
+  1. 'Circle Moving' extends knowledge of shape library and canvas elements by adding a 'tick' which enables animation.
+  
