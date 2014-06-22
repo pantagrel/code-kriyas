@@ -1,0 +1,37 @@
+body{
+	background-color: black;
+}
+
+.square{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	background-color: red;
+}
+
+.square22{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	background-color: orange;
+	left: 0px;
+}
+
+.pickyPic{
+	min-width: 100%;
+}
+
+h2{
+	color: lightblue;
+	position: relative;
+	top: 400px;
+	left: 30px;
+}
+
+#pic1{
+
+}
+
+.nestor{
+	position: relative;
+}
