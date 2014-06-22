@@ -1,13 +1,18 @@
 body{
-	font-size: 1.5em;
-	line-height: 1.7em;
+	font-size: 1.25em;
+	line-height: 1.5em;
 	margin: 0 auto;
 }
 
 p{
 	
 }
+#forkMe{
+	display: none;
+}
 
-p#album-one{
-	line-height: 1.3em;
+#masthead{
+	width: 100%;
+	max-width: 100%;
+
 }

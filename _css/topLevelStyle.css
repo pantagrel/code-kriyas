@@ -1,35 +1,85 @@
 body{
-	font-size: 1.1em;
+	font-size: 16px;
 	line-height: 1.35em;
 	margin: 0 auto;
-	font-family: monospace;
+	background-color: #0C0C0C;
+	font-family: "museo-slab", monospace;
+	color: white;
 }
-
-a, a:visited{
-
+a, a:visited, a:hover{
+	color: white;
+	text-decoration: none;
 } 
 
-#masthead{
-	margin: 6em auto 3em;
-	width: 70%;
-	max-width: 500px;
+p{
+	font-family: "museo-sans-rounded", monospace;
 }
 
-#masthead img{
-	width: 100%;
-	max-width: 500px;
+nav li a:hover{
+	background-color: #E02810;
+	padding: .9em;
 }
 
-#code-kriyas-list{
+#page{
+	max-width: 100%;
+	position: relative;
+	display: block;
 	margin: 0 auto;
-	width: 70%;
-	max-width: 500px; 
+}
+#container{
+	background-color: black;
+	margin: 0 auto;
+	max-width: 80%;
+	height: 100%;
 }
 
-p#album-one{
-	margin-top: 3em;
+#masthead{
+	background-color: black;
+	margin: 0 auto;
+	max-width: 50%;
 }
 
-li{
-	margin-top: .8em;
+svg{
+	height: 10em;
+	min-height: 4em;
 }
+
+#navContainer{
+	text-align: center;
+}
+
+nav{
+	background-color: black;
+}
+
+nav ul{
+	margin-left: 0em;
+	padding-left: 0;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+}
+
+nav li{
+	list-style: none;
+	margin-left: 0em;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	line-height: 3em;
+	border-top: 1px dashed white;
+	text-decoration: none;
+}
+
+nav li:last-child{
+	border-bottom: 1px dashed white;
+}
+
+article{
+
+}
+
+#forkMe{
+	
+}
+
+
+

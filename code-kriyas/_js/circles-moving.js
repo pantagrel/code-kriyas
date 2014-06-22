@@ -4,17 +4,17 @@ function init() {
 	stage = new createjs.Stage("canvas");
 	
 	circle1 = new createjs.Shape();
-	circle1.graphics.beginFill("black").drawCircle(0, 0, 20);
+	circle1.graphics.beginFill("red").drawCircle(0, 0, 20);
 	stage.addChild(circle1);
 
 	circle2 = new createjs.Shape();
-	circle2.graphics.beginFill("orange").drawCircle(0, 0, 10);
+	circle2.graphics.beginFill("white").drawCircle(0, 0, 10);
 	stage.addChild(circle2);
 	circle2.y = 500;
 	circle2.x = 500;
 
 	circle3 = new createjs.Shape();
-	circle3.graphics.beginFill("lightblue").drawCircle(0, 0, 12);
+	circle3.graphics.beginFill("gray").drawCircle(0, 0, 12);
 	stage.addChild(circle3);
 	circle3.x = 100;
 	circle3.y = 500;
