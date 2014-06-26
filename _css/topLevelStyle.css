@@ -1,9 +1,9 @@
 body{
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.35em;
 	margin: 0 auto;
-	background-color: #0C0C0C;
-	font-family: "museo-slab", monospace;
+	background-color: black;
+	font-family: "ff-tisa-web-pro", monospace;
 	color: white;
 }
 a, a:visited, a:hover{
@@ -12,7 +12,7 @@ a, a:visited, a:hover{
 } 
 
 p{
-	font-family: "museo-sans-rounded", monospace;
+	font-family: "clavo", monospace;
 }
 
 nav li a:hover{
@@ -35,8 +35,15 @@ nav li a:hover{
 
 #masthead{
 	background-color: black;
-	margin: 0 auto;
+	margin: 2em auto 0;
 	max-width: 50%;
+	text-align: center;
+}
+
+#masthead h1{
+	font-family: "aw-conqueror-carved-one", serif;
+	font-size: 3em;
+	line-height: 100%;
 }
 
 svg{
@@ -65,12 +72,12 @@ nav li{
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
 	line-height: 3em;
-	border-top: 1px dashed white;
+	border-top: 1px dashed #393939;
 	text-decoration: none;
 }
 
 nav li:last-child{
-	border-bottom: 1px dashed white;
+	border-bottom: 1px dashed #393939;
 }
 
 article{
