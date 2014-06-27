@@ -1,18 +1,18 @@
 body{
-	font-size: 18px;
+	font-size: 15px;
 	line-height: 1.35em;
 	margin: 0 auto;
-	background-color: black;
-	font-family: "ff-tisa-web-pro", monospace;
-	color: white;
+	background-color: #F5F4D9;
+	font-family: "aw-conqueror-carved-one", monospace;
+	color: #363636;
 }
 a, a:visited, a:hover{
-	color: white;
+	color: #363636;
 	text-decoration: none;
 } 
 
 p{
-	font-family: "clavo", monospace;
+	font-family: monospace;
 }
 
 nav li a:hover{
@@ -27,23 +27,24 @@ nav li a:hover{
 	margin: 0 auto;
 }
 #container{
-	background-color: black;
 	margin: 0 auto;
 	max-width: 80%;
 	height: 100%;
 }
 
 #masthead{
-	background-color: black;
-	margin: 2em auto 0;
-	max-width: 50%;
+	margin: 0 auto 0;
+	padding: 1em;
+	max-width: 100%;
 	text-align: center;
+	background-color: #121028;
 }
 
 #masthead h1{
 	font-family: "aw-conqueror-carved-one", serif;
 	font-size: 3em;
 	line-height: 100%;
+	color: antiquewhite;
 }
 
 svg{
@@ -53,10 +54,11 @@ svg{
 
 #navContainer{
 	text-align: center;
+	background-color: #F5F4D9;
 }
 
 nav{
-	background-color: black;
+	
 }
 
 nav ul{
@@ -74,6 +76,10 @@ nav li{
 	line-height: 3em;
 	border-top: 1px dashed #393939;
 	text-decoration: none;
+}
+
+nav li:first-child{
+	border-top: none;
 }
 
 nav li:last-child{

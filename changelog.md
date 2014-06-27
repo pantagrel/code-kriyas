@@ -25,7 +25,7 @@ _Ballard Workshop's record of action._
   
    * No classic serifs. Too formal, diginified, polished. This work is not polished. (Though could the constrast create interesting tension within a viewer? Is 'tension' something that would build additional engagement? Or would this detail be too subtle and just come across as a poorly chosen typeface? Will have to invesigate!)
 
-1. __6.27.14__ This is what I did today.
+1. __6.27.14__ Global functions in php (for next/previous and always having the array values available to every page.) php includes? or just a functions page? 
 
 
 

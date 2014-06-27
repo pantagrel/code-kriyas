@@ -11,10 +11,11 @@
 <body>
 	
 <div id="page">
-		<div id="container">
 			<div id="masthead">
 				<h1>BALLARD WORKSHOP</h1>
 			</div> <!--masthead-->
+		<div id="container">
+
 
 			<div id="navContainer">
 				<nav>
@@ -54,29 +55,10 @@
 						echo '</ul>';
 
 						?>
-						<li>what page are you on? what's 'next' and 'previous'?</li>
-
-						<?php
-						// what page are we on?
-
-						// $currentPage = '06_test2';
-						echo $_SERVER['REQUEST_URI'];
-						echo '<p></p>';
-
-						// is this page part of the array?
-						$whatPage = array_search($currentPage, $trimmedTitles);
-						$startPage = array_search('directoryTest.php', $fullTitles);
-						if ($whatPage > 0){
-							echo '<p>current page: '.$whatPage.'</p>';
-							echo '<p>previous page: '.($trimmedTitles[$whatPage-1]).'</p>';
-							echo '<p>next page: '.($trimmedTitles[$whatPage+1]).'</p>';
-						} else if ($startPage > 0) {
-							echo '<p>next page: '.($trimmedTitles[0]).'</p>';
-						} else echo 'nothing going';
-						?>
 
 					</ul>
 				</nav>
+			</div><!--navContainer-->
 			
 		</div><!--container-->
 
