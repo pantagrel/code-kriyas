@@ -2,7 +2,7 @@
 
 _Ballard Workshop's record of action._
 
-°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸ ><(((º>
+༼ つ ◕_◕ ༽つ
   _____
 
 1. __6.22.14__ Dusted the cobwebs off the github page. Reconfigured and renamed the repo to be more tightly defined than before. Fussed with styling of the user-facing site. Tweaked the github readme content to have more accurate info.
