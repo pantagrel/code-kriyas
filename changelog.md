@@ -5,7 +5,7 @@ _Ballard Workshop's record of action._
 ༼ つ ◕_◕ ༽つ
   _____
 
-* __6.28.14__ Global functions in php (for next/previous and always having the array values available to every page.) php includes? or just a functions page? 
+* __6.28.14__ Added this change log to the live site. Added an includes command to a couple files. Brain is slow today. I'm going to go for a walk now. 
 
 * __6.27.14__ Looked at fonts, created this change log and backfilled the entries. Font finding: attempted to do it calmly and with direction b/c this type of activity (selecting fonts, colors, etc) can be overwhelming for me. Easy to get diverted towards unplanned directions. I'd like to learn to be more _consistently_ deliberate about my choices, and I'm finding it helps to identify a driving ethos: 
   * "Funky interior shapes, slightly irregular as relates to the overall shape. Readable, friendly, a bit organic. Looks like the code work I'm doing: a bit wonky.
