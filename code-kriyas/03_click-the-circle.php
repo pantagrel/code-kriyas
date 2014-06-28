@@ -12,6 +12,10 @@
 <p>
 	I wonder if what we're doing is what we should be doing.
 </p>
-<p>&#8617; <a href="../">Index</a></p>
+<p>
+			<?php
+				include '../_includes/navigation.php';
+			?>
+		</p>
 </body>
 </html>

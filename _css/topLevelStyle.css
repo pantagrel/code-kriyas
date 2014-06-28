@@ -2,13 +2,13 @@ body{
 	font-size: 15px;
 	line-height: 1.35em;
 	margin: 0 auto;
-	background-color: #F5F4D9;
+	background-color: black;
 	font-family: "aw-conqueror-carved-one", monospace;
-	color: #363636;
+	color: #bbb;
 }
 a, a:visited, a:hover{
-	color: #363636;
-	text-decoration: none;
+	color: #bbb;
+	text-decoration: underline;
 } 
 
 p{
@@ -17,7 +17,7 @@ p{
 
 nav li a:hover{
 	background-color: #E02810;
-	padding: .9em;
+	
 }
 
 #page{
@@ -37,7 +37,7 @@ nav li a:hover{
 	padding: 1em;
 	max-width: 100%;
 	text-align: center;
-	background-color: #121028;
+	background-color: black;
 }
 
 #masthead h1{
@@ -54,7 +54,7 @@ svg{
 
 #navContainer{
 	text-align: center;
-	background-color: #F5F4D9;
+	background-color: black;
 }
 
 nav{
@@ -84,6 +84,12 @@ nav li:first-child{
 
 nav li:last-child{
 	border-bottom: 1px dashed #393939;
+}
+
+nav li.changelog{
+	line-height: 120%;
+	padding: .5em 0;
+	text-align: left;
 }
 
 article{
