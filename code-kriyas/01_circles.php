@@ -15,7 +15,7 @@
 
 		<div id="kriya">
 
-			<canvas id="canvas" width="500" height="300">
+			<canvas id="canvas" width="1000" height="300">
 				alternate content
 			</canvas>
 		<p>

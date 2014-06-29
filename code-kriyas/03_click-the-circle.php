@@ -13,7 +13,7 @@
 				include '../_includes/kriyas-header.php';
 			?>
 			<div id="kriya">
-				<canvas id="canvas" width="500" height="500">
+				<canvas id="canvas" width="1000" height="500">
 					shapes responding to mouse events.  
 				</canvas>
 			<p>

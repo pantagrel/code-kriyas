@@ -1,13 +1,12 @@
 body{
 	font-size: 15px;
 	line-height: 1.35em;
-	margin: 0 auto;
+	margin: 0;
 	background-color: #20396F;
 	font-family: "aw-conqueror-carved-one", monospace;
-	color: #bbb;
 }
 a, a:visited, a:hover{
-	color: #bbb;
+	color: #E2DFBC;
 	text-decoration: none;
 }
 
@@ -15,14 +14,12 @@ h1 a, h1 a:visited, h1 a:hover{
 	text-decoration: none;
 	color: #F5F4D9;
 } 
-#pagination a{
+#pagination, #pagination a{
 	color: #1DBFD5;
 }
 
-
 nav li a:hover{
-	text-decoration: underline;
-	
+	text-decoration: underline;	
 }
 
 #page{
@@ -39,10 +36,11 @@ nav li a:hover{
 
 #masthead{
 	margin: 0 auto 0;
-	padding: 1em;
+	padding: 2em 1em 0;
 	max-width: 100%;
 	text-align: center;
 	background-color: #0987BF;
+	border-bottom: 10px solid #1DBFD5;
 }
 
 #masthead h1{
@@ -78,16 +76,17 @@ nav li{
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
 	line-height: 3em;
-	border-top: 1px dashed #E2DFBC;
+	border-top: 2px dashed #0987BF;
 	text-decoration: none;
 }
 
 nav li:first-child{
 	border-top: none;
+	padding-top: .2em;
 }
 
 nav li:last-child{
-	border-bottom: 1px dashed #E2DFBC;
+	border-bottom: 2px dashed #0987BF;
 }
 
 nav li.changelog{
@@ -119,6 +118,20 @@ nav li.changelog{
 #kriya{
 	background-color: #20396F;
 	height: 100%;
+	max-width: 100%;
+	color: #E2DFBC;
+}
+#kriya h1, #kriya h2, #kriya h3, #kriya p{
+	padding-left: 1em;
+}
+#kriya p{
+	font-family: Georgia;
+	font-style: italic;;
+}
+
+
+canvas{
+	width: 100%;
 }
 
 article{
