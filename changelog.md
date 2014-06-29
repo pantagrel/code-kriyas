@@ -5,7 +5,7 @@ _Ballard Workshop's record of action._
 ༼ つ ◕_◕ ༽つ
   _____
 
-* __6.28.14__ Added this change log to this live site. Set up a top nav for the interior pages of the 'kriyas' exporlations that are to come and a template file that uses the php includes command to pull in the navigation. Created a 
+* __6.28.14__ Added this change log to this live site. Set up a top nav for the interior pages of the 'kriyas' exporlations that are to come and a template file that uses the php includes command to pull in the navigation. Created a snippet (Sublime Text 2's templating system) of the base framework for the code experiments--has navigation and an HTML shell, that's it.
 
 * __6.27.14__ Looked at fonts, created this change log and backfilled the entries. Font finding: attempted to do it calmly and with direction b/c this type of activity (selecting fonts, colors, etc) can be overwhelming for me. Easy to get diverted towards unplanned directions. I'd like to learn to be more _consistently_ deliberate about my choices, and I'm finding it helps to identify a driving ethos: 
   * "Funky interior shapes, slightly irregular as relates to the overall shape. Readable, friendly, a bit organic. Looks like the code work I'm doing: a bit wonky.
