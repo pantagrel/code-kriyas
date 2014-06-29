@@ -13,6 +13,7 @@
 <div id="page">
 			<div id="masthead">
 				<h1>BALLARD WORKSHOP</h1>
+				<h4 id="subhead">SEATTLE, WASHINGTON</h4>
 			</div> <!--masthead-->
 		<div id="container">
 
@@ -23,37 +24,26 @@
 						<?php
 						// $dir = getcwd();
 						$dir = "/Users/kristin/ballardworkshop/website/code-kriyas/";
-
-						// Sort in ascending order - this is default
 						$fullTitles = scandir($dir, 1);
 
-						// print_r($fullTitles);
-
-						?>
-
-						<?php
 						$trimmedTitles = array();
 						$suffix = ".php";
 
 						foreach ($fullTitles as $key => $value){
-							// $value = substr($value, 3);
 							if (substr_count($value, $suffix) > 0)
-								
-								// remove suffix so link is presentable
-								
 								$trimmedTitles[] = substr($value, 0, -4);
 						}
-
+						
 						// print the array of links, add the suffix back for the ahref:
 						echo '<ul>';
 						foreach($trimmedTitles as $niblet){
 							$unprettyChars = array("_", "-");
 							if($niblet != 'index')
 								$cleanString = str_replace($unprettyChars, " ", $niblet);
-							echo '<li><a href="code-kriyas/' .$niblet. '.php">' .$cleanString. '</a></li>';
+								$cleanString_noNum = substr($cleanString, 2);
+							echo '<li><a href="code-kriyas/' .$niblet. '.php">' .$cleanString_noNum. '</a></li>';
 						}
 						echo '</ul>';
-
 						?>
 
 					</ul>
@@ -66,7 +56,7 @@
 
 
 <div id="forkMe">
-	<a href="https://github.com/pantagrel/code-kriyas"><img style="position: absolute; top: 0; right: 0; border: 0;" src="_img/forkMe.png" alt="Fork me on GitHub"></a>
+	<a href="https://github.com/pantagrel/code-kriyas"><img style="position: absolute; top: 0; left: 0; border: 0;" src="_img/forkMe_TL.png" alt="Fork me on GitHub"></a>
 	</div>
 
 	<script>

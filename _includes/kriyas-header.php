@@ -13,27 +13,29 @@
 						$suffix = ".php";
 						foreach ($fullTitles as $key => $value){
 							if (substr_count($value, $suffix) > 0)
-								//only consider .php files for our navigation
 								$navigationList[] = $value;
 						}
-									
-						// what page are we on?
-						// line below returns the folder, also. how to incorporate that intelligently?
-						$currentPage = $_SERVER['REQUEST_URI'];
 
-						$currentPage = substr($currentPage, 13);			
-						$startPage = array_search('index.php', $fullTitles);
+						$navigationList_reverse = array_reverse($navigationList);
 
-						// is this page part of the array?
-						$whatPage = array_search($currentPage, $navigationList);
+						$currentPage_value = $_SERVER['REQUEST_URI'];
 
-						if ($whatPage > 0){
-							// echo '<p>current: '.$navigationList[$whatPage].'</p>';
-							echo '<p><a href="' .$navigationList[$whatPage+1]. '">previous</a> | <a href="' .$navigationList[$whatPage-1]. '">next</a></p>';
-						} else if ($startPage > 0) {
-							echo '<p>next page: '.($navigationList[0]).'</p>';
-						} else echo 'false';
+						//removes the folder from beginning of pagename string:
+						$currentPage_value = substr($currentPage_value, 13);
+
+						// current page's position in the array:
+						$currentPage_key = array_search($currentPage_value, $navigationList_reverse);
+						$navList_length = count($navigationList_reverse);
+					
+						if ($currentPage_key > 0 && $currentPage_key < ($navList_length - 1)){
+							echo '<a href="' .$navigationList_reverse[$currentPage_key-1]. '">previous</a> | <a href="' .$navigationList_reverse[$currentPage_key+1]. '">next</a></p>';
+						} else if ($currentPage_key == 0){
+							echo '<a href="' .$navigationList_reverse[$currentPage_key+1]. '">next</a></p>';
+						} else if ( $currentPage_key == ($navList_length - 1) ){
+							echo '<a href="' .$navigationList_reverse[$currentPage_key-1]. '">previous</a></p>';
+						} else echo 'navigation breakdown';
 					?>
+
 				</div><!-- pagination -->
 			</div><!-- topNav -->
 		</nav>

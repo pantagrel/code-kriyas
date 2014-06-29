@@ -4,6 +4,7 @@ body{
 	margin: 0;
 	background-color: #20396F;
 	font-family: "aw-conqueror-carved-one", monospace;
+	color: #F5F4D9;
 }
 a, a:visited, a:hover{
 	color: #E2DFBC;
@@ -14,9 +15,6 @@ h1 a, h1 a:visited, h1 a:hover{
 	text-decoration: none;
 	color: #F5F4D9;
 } 
-#pagination, #pagination a{
-	color: #1DBFD5;
-}
 
 nav li a:hover{
 	text-decoration: underline;	
@@ -48,6 +46,14 @@ nav li a:hover{
 	font-size: 3em;
 	line-height: 100%;
 	color: #E2DFBC;
+	margin: 1em 0 .25em;
+}
+
+#masthead h4#subhead{
+	letter-spacing: .5em;
+	font-size: .75em;
+	margin: 0 0 1.75em;
+	font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 
 svg{
@@ -78,6 +84,8 @@ nav li{
 	line-height: 3em;
 	border-top: 2px dashed #0987BF;
 	text-decoration: none;
+	text-transform: capitalize;
+	font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 
 nav li:first-child{
@@ -115,6 +123,14 @@ nav li.changelog{
 	text-align: right;
 }
 
+#pagination, #pagination a{
+	color: #1DBFD5;
+}
+
+#pagination a:hover{
+	color: #E2DFBC;
+}
+
 #kriya{
 	background-color: #20396F;
 	height: 100%;
@@ -125,7 +141,7 @@ nav li.changelog{
 	padding-left: 1em;
 }
 #kriya p{
-	font-family: Georgia;
+	font-family: "ff-tisa-web-pro", Georgia, serif;
 	font-style: italic;;
 }
 
@@ -139,7 +155,7 @@ article{
 }
 
 #forkMe{
-	
+
 }
 
 
