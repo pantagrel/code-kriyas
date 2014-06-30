@@ -1,12 +1,17 @@
-#/ CHANGE LOG /
+#/ CHANGELOG /
 
-_Ballard Workshop's record of action._
+_Ballard Workshop's record of leisurely coding._
 
 ༼ つ ◕_◕ ༽つ
   _____
 * __6.29.14__ Made interior navigation work with array. Now, on first page and last page you should only see the appropriate directional guidance. Realized I was comparing keys with values, so once I matched up the comparison elements, things fell into place. Cleaned up how the index page displays the list of kriyas. Flipped the fork me graphic to live on the top left corner. It was getting in the way on the right side. Now I'm wondering what order the main index should display results. Listened to [Preachin' the Blues] (http://kexp.org/programs/PreachintheBlues) on KEXP. Best radio show. I get so excited for Sunday mornings.
   * Recent on top? Yes, I think so...but I need to add a date or a number and make the interior navigation reversed. Currently I click the first item and the nav I see says "previous", which doesn't make sense when it's the first thing I've looked at...
   * it would be cool to create an array on the fly that tracks what someone has seen and creates previous/next out of that info. "Unique" experience each time for each user.
+  * it is intimidating to begin new chunks of work--it feels good to slowly update and bask in successful code/markup implementation. next steps, however:
+      * make the nav into svg graphics
+      * add js flags to show the name of the upcoming file
+      * move nav from top to sidebar? or at least make it responsive from its current position
+
 
 * __6.28.14__ Added this change log to this live site. Set up a top nav for the interior pages of the 'kriyas' exporlations that are to come. Set up a template file that uses the php includes command to pull in the navigation. Created a snippet of that template file (Sublime Text 2's templating system) which has the base framework for the code experiments--navigation and an HTML shell, with placeholder copy for content that will need to be tweaked for each separate file. Snippets are pretty boss. There will definitely need to be more of these created at a future date. Moved from having everything be black, white and red, to shades of blue and cream. Blue is more Ballard--it looks more _right_ right now. 
 

@@ -26,13 +26,16 @@
 						// current page's position in the array:
 						$currentPage_key = array_search($currentPage_value, $navigationList_reverse);
 						$navList_length = count($navigationList_reverse);
+
+						$previousIcon = "/_img/nav_arrow.svg";
+						$nextIcon = null;
 					
 						if ($currentPage_key > 0 && $currentPage_key < ($navList_length - 1)){
 							echo '<a href="' .$navigationList_reverse[$currentPage_key-1]. '">previous</a> | <a href="' .$navigationList_reverse[$currentPage_key+1]. '">next</a></p>';
 						} else if ($currentPage_key == 0){
 							echo '<a href="' .$navigationList_reverse[$currentPage_key+1]. '">next</a></p>';
 						} else if ( $currentPage_key == ($navList_length - 1) ){
-							echo '<a href="' .$navigationList_reverse[$currentPage_key-1]. '">previous</a></p>';
+							echo '<a href="' .$navigationList_reverse[$currentPage_key-1]. '">previous</a> | <span id="inactiveNav">next<span> </p>';
 						} else echo 'navigation breakdown';
 					?>
 

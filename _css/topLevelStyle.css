@@ -29,7 +29,6 @@ nav li a:hover{
 #container{
 	margin: 0 auto;
 	max-width: 80%;
-	height: 100%;
 }
 
 #masthead{
@@ -50,10 +49,11 @@ nav li a:hover{
 }
 
 #masthead h4#subhead{
-	letter-spacing: .5em;
+	letter-spacing: .7em;
 	font-size: .75em;
 	margin: 0 0 1.75em;
-	font-family: "ff-tisa-sans-web-pro", sans-serif;
+	font-family: "jaf-facitweb", sans-serif;
+	font-weight: 300;
 }
 
 svg{
@@ -85,7 +85,8 @@ nav li{
 	border-top: 2px dashed #0987BF;
 	text-decoration: none;
 	text-transform: capitalize;
-	font-family: "ff-tisa-sans-web-pro", sans-serif;
+	font-family: "jaf-facitweb", sans-serif;
+		font-weight: 300;
 }
 
 nav li:first-child{
@@ -123,12 +124,20 @@ nav li.changelog{
 	text-align: right;
 }
 
+img#navArrows{
+	height: 30px;
+	background-position: -20px;
+}
+
 #pagination, #pagination a{
 	color: #1DBFD5;
 }
 
 #pagination a:hover{
 	color: #E2DFBC;
+}
+span#inactiveNav{
+	color: #3599BC;
 }
 
 #kriya{

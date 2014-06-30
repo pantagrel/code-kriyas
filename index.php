@@ -23,25 +23,27 @@
 					<ul>
 						<?php
 						// $dir = getcwd();
-						$dir = "/Users/kristin/ballardworkshop/website/code-kriyas/";
-						$fullTitles = scandir($dir, 1);
-
-						$trimmedTitles = array();
+						$dir = "code-kriyas/";
+						$fullTitles = scandir($dir);
+						
+						$onlyPHPtitles = array();
 						$suffix = ".php";
-
 						foreach ($fullTitles as $key => $value){
 							if (substr_count($value, $suffix) > 0)
-								$trimmedTitles[] = substr($value, 0, -4);
+								$onlyPHPtitles[] = $value;
 						}
+
+						//create an array of arrays. that's the thing to do, methinks.
+						$dateModified = null;
 						
-						// print the array of links, add the suffix back for the ahref:
 						echo '<ul>';
-						foreach($trimmedTitles as $niblet){
-							$unprettyChars = array("_", "-");
-							if($niblet != 'index')
+						foreach($onlyPHPtitles as $niblet){
+							$unprettyChars = array("_", "-", ".php");
+							if($niblet != 'index'){
+								$dateModified = date ("F d Y", filemtime('code-kriyas/'.$niblet));
 								$cleanString = str_replace($unprettyChars, " ", $niblet);
-								$cleanString_noNum = substr($cleanString, 2);
-							echo '<li><a href="code-kriyas/' .$niblet. '.php">' .$cleanString_noNum. '</a></li>';
+							}
+							echo '<li>'.$dateModified.' <a href="code-kriyas/' .$niblet. '">' .$cleanString. '</a></li>';
 						}
 						echo '</ul>';
 						?>
