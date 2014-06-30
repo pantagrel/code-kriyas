@@ -17,6 +17,20 @@
 			</div> <!--masthead-->
 		<div id="container">
 
+			<?php
+				// get contents of a directory.
+				// return the files of designated suffix and the date they were created.
+				function scanAndSort_directory($directory, $suffix){
+					$allFiles = scandir($directory);
+					$onlySuffixedFiles = array();
+					foreach ($allFiles as $key => $value){
+						if (substr_count($value, $suffix) > 0)
+							$onlySuffixedFiles[] = $value;
+					}
+					return $onlySuffixedFiles;
+				}
+				print_r(scanAndSort_directory('code-kriyas', '.php'));
+			?>
 
 			<div id="navContainer">
 				<nav>

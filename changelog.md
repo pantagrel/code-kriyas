@@ -4,6 +4,9 @@ _Ballard Workshop's record of leisurely coding._
 
 ༼ つ ◕_◕ ༽つ
   _____
+
+* __6.30.14__ Started in on functions. Following that will be learning more (and learning again) about arrays of arrays. No tuples in php! Want to sort the files by either date created or date last modified.
+
 * __6.29.14__ Made interior navigation work with array. Now, on first page and last page you should only see the appropriate directional guidance. Realized I was comparing keys with values, so once I matched up the comparison elements, things fell into place. Cleaned up how the index page displays the list of kriyas. Flipped the fork me graphic to live on the top left corner. It was getting in the way on the right side. Now I'm wondering what order the main index should display results. Listened to [Preachin' the Blues] (http://kexp.org/programs/PreachintheBlues) on KEXP. Best radio show. I get so excited for Sunday mornings.
   * Recent on top? Yes, I think so...but I need to add a date or a number and make the interior navigation reversed. Currently I click the first item and the nav I see says "previous", which doesn't make sense when it's the first thing I've looked at...
   * it would be cool to create an array on the fly that tracks what someone has seen and creates previous/next out of that info. "Unique" experience each time for each user.
