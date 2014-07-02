@@ -25,11 +25,14 @@
 					$onlySuffixedFiles = array();
 					foreach ($allFiles as $key => $value){
 						if (substr_count($value, $suffix) > 0)
+							$onlySuffixedFiles[$key] = date ("F d Y", filemtime($directory.$value));
 							$onlySuffixedFiles[] = $value;
 					}
 					return $onlySuffixedFiles;
 				}
-				print_r(scanAndSort_directory('code-kriyas', '.php'));
+				
+				print_r (scanAndSort_directory('code-kriyas/', '.php'));
+				
 			?>
 
 			<div id="navContainer">

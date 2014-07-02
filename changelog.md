@@ -5,6 +5,9 @@ _Ballard Workshop's record of leisurely coding._
 ༼ つ ◕_◕ ༽つ
   _____
 
+
+* __7.01.14__ Functions are easy--standard stuff. So now I'm writing a function to build an associative array. Each file with the suffix of .php in a particular directory I want to be added to a particular array as a value. Then I want to add the last date that particular file was modified to be added to the array as the associated key. So that's what I'm doing right now.  
+
 * __6.30.14__ Started in on functions. Following that will be learning more (and learning again) about arrays of arrays. No tuples in php! Want to sort the files by either date created or date last modified.
 
 * __6.29.14__ Made interior navigation work with array. Now, on first page and last page you should only see the appropriate directional guidance. Realized I was comparing keys with values, so once I matched up the comparison elements, things fell into place. Cleaned up how the index page displays the list of kriyas. Flipped the fork me graphic to live on the top left corner. It was getting in the way on the right side. Now I'm wondering what order the main index should display results. Listened to [Preachin' the Blues] (http://kexp.org/programs/PreachintheBlues) on KEXP. Best radio show. I get so excited for Sunday mornings.
