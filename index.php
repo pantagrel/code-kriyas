@@ -4,7 +4,6 @@
 	<script type="text/javascript" src="//use.typekit.net/gle3hly.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link rel="stylesheet" type="text/css" href="_css/topLevelStyle.css">
-	<link rel="stylesheet" type="text/css" media="only screen and (min-width: 50px) and (max-width: 780px)" href="_css/screen_layout_small.css" />
 	
 </head>
 
@@ -31,7 +30,7 @@
 						foreach ($titlesList as $key => $value){
 								$trimKey = substr($key, 0, 8);
 								$prettyTitle = str_replace($unprettyChars, " ", $value);
-								echo '<li>' .$trimKey. ':  <a href="code-kriyas/'.$value.'">'.$prettyTitle.'</a></li>';
+								echo '<li><span class="date">' .$trimKey. ':</span>  <span class="kriyaTitle"><a href="code-kriyas/'.$value.'">'.$prettyTitle.'</a></span></li>';
 							}
 						echo '</ul>';
 						?>

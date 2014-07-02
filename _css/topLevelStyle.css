@@ -89,6 +89,14 @@ nav li{
 		font-weight: 300;
 }
 
+nav li span.date{
+	font-family: Futura;
+	font-weight: bold;
+}
+nav li span.kriyaTitle{
+	
+}
+
 nav li:first-child{
 	border-top: none;
 	padding-top: .2em;
@@ -167,5 +175,63 @@ article{
 
 }
 
+@media (max-width: 700px) {
+	body{
+		font-size: 1.25em;
+		line-height: 1.5em;
+		margin: 0 auto;
+	}
+
+	#forkMe{
+		display: none;
+	}
+
+	#masthead{
+		width: 100%;
+		max-width: 100%;
+
+	}
+}
+
+@media (max-width: 400px) {
+	body{
+		font-size: 1em;
+		line-height: 40px;
+		margin: 0 auto;
+	}
+
+	#forkMe{
+		display: none;
+	}
+
+	#masthead {
+		max-width: 100%;
+		/*margin: 0 auto;*/
+		text-align: left;
+		padding: 1em 1em 0;
+		
+	}
+	#masthead h1{
+		width: 80%;
+		max-width: 80%;
+		/*margin: 0 auto;*/
+		font-size: 2.5em;
+	}
+	#masthead h4#subhead{
+		font-size: .5em;
+	}
+	nav{
+		padding: 0;
+		margin: 0;
+	}
+	nav li{
+		line-height: 120%;
+		padding: 1em 0 ;
+		text-align: left;
+	}
+	nav li span.kriyaTitle{
+		/*how to make lines 2+ get indented?;*/
+}
+}
 
 

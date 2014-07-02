@@ -5,6 +5,9 @@ _Ballard Workshop's record of leisurely coding._
 ༼ つ ◕_◕ ༽つ
   _____
 
+* __7.03.14__ An aside, now, to consider the design elements of the Ballard Workshop website.
+
+* __7.02.14__Now over 25% done with my initial kriyas goal of daily practice for 40 days. Yay! Also, maybe I'll make a button that sorts the index by user preference (ascending or descending date only at this time...but! that would be taking user feedback to alter your web experience. I know, I know. Nearly every fucking webpage on the planet can do that already. But _I_ didn't hand code those websites...so there's a big difference.)
 
 * __7.01.14__ Functions are easy--standard stuff. So now I'm writing a function to build an associative array. Each file with the suffix of .php in a particular directory I want to be added to a particular array as a value. Then I want to add the last date that particular file was modified to be added to the array as the associated key. So that's what I'm doing right now...aaaaaand...there we go! An index page that generates out of a directory on a server and sorts itself by date create, with the most recent item at the top of the list.
 
