@@ -19,19 +19,22 @@
 
 			<?php
 				// get contents of a directory.
-				// return the files of designated suffix and the date they were created.
-				function scanAndSort_directory($directory, $suffix){
+				// return the files of designated suffix and the date they were created
+				function dateSort_directory($directory, $suffix){
 					$allFiles = scandir($directory);
-					$onlySuffixedFiles = array();
 					foreach ($allFiles as $key => $value){
-						if (substr_count($value, $suffix) > 0)
-							$onlySuffixedFiles[$key] = date ("F d Y", filemtime($directory.$value));
+						if (substr_count($value, $suffix) > 0){
 							$onlySuffixedFiles[] = $value;
+							$tempDateHolder[] = date ("d F Y H:i:s", filemtime($directory.$value));
+							}	
 					}
-					return $onlySuffixedFiles;
+					// here's where i had to combine two arrays
+					$datedFiles = array_combine($tempDateHolder, $onlySuffixedFiles);
+					// sort by key:
+					ksort($datedFiles);
+					return $datedFiles;
 				}
-				
-				print_r (scanAndSort_directory('code-kriyas/', '.php'));
+				print_r(dateSort_directory('code-kriyas/', '.php'));
 				
 			?>
 
