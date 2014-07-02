@@ -6,7 +6,7 @@ _Ballard Workshop's record of leisurely coding._
   _____
 
 
-* __7.01.14__ Functions are easy--standard stuff. So now I'm writing a function to build an associative array. Each file with the suffix of .php in a particular directory I want to be added to a particular array as a value. Then I want to add the last date that particular file was modified to be added to the array as the associated key. So that's what I'm doing right now.  
+* __7.01.14__ Functions are easy--standard stuff. So now I'm writing a function to build an associative array. Each file with the suffix of .php in a particular directory I want to be added to a particular array as a value. Then I want to add the last date that particular file was modified to be added to the array as the associated key. So that's what I'm doing right now...aaaaaand...there we go! An index page that generates out of a directory on a server and sorts itself by date create, with the most recent item at the top of the list.
 
 * __6.30.14__ Started in on functions. Following that will be learning more (and learning again) about arrays of arrays. No tuples in php! Want to sort the files by either date created or date last modified.
 

@@ -10,61 +10,29 @@
 
 <body>
 	
-<div id="page">
-			<div id="masthead">
-				<h1>BALLARD WORKSHOP</h1>
-				<h4 id="subhead">SEATTLE, WASHINGTON</h4>
-			</div> <!--masthead-->
-		<div id="container">
+<?php include("_includes/functions.php"); ?>
 
-			<?php
-				// get contents of a directory.
-				// return the files of designated suffix and the date they were created
-				function dateSort_directory($directory, $suffix){
-					$allFiles = scandir($directory);
-					foreach ($allFiles as $key => $value){
-						if (substr_count($value, $suffix) > 0){
-							$onlySuffixedFiles[] = $value;
-							$tempDateHolder[] = date ("d F Y H:i:s", filemtime($directory.$value));
-							}	
-					}
-					// here's where i had to combine two arrays
-					$datedFiles = array_combine($tempDateHolder, $onlySuffixedFiles);
-					// sort by key:
-					ksort($datedFiles);
-					return $datedFiles;
-				}
-				print_r(dateSort_directory('code-kriyas/', '.php'));
-				
-			?>
+	<div id="page">
+		<div id="masthead">
+			<h1>BALLARD WORKSHOP</h1>
+			<h4 id="subhead">SEATTLE, WASHINGTON</h4>
+		</div> <!--masthead-->
+		<div id="container">
 
 			<div id="navContainer">
 				<nav>
 					<ul>
+						
 						<?php
-						// $dir = getcwd();
-						$dir = "code-kriyas/";
-						$fullTitles = scandir($dir);
-						
-						$onlyPHPtitles = array();
-						$suffix = ".php";
-						foreach ($fullTitles as $key => $value){
-							if (substr_count($value, $suffix) > 0)
-								$onlyPHPtitles[] = $value;
-						}
-
-						//create an array of arrays. that's the thing to do, methinks.
-						$dateModified = null;
-						
 						echo '<ul>';
-						foreach($onlyPHPtitles as $niblet){
-							$unprettyChars = array("_", "-", ".php");
-							if($niblet != 'index'){
-								$dateModified = date ("F d Y", filemtime('code-kriyas/'.$niblet));
-								$cleanString = str_replace($unprettyChars, " ", $niblet);
+						$titlesList = dateSort_directory('code-kriyas/', '.php');
+						$unprettyChars = array("_", "-", ".php");
+						// print_r($c);
+						foreach ($titlesList as $key => $value){
+								$trimKey = substr($key, 0, 8);
+								$prettyTitle = str_replace($unprettyChars, " ", $value);
+								echo '<li>' .$trimKey. ':  <a href="code-kriyas/'.$value.'">'.$prettyTitle.'</a></li>';
 							}
-							echo '<li>'.$dateModified.' <a href="code-kriyas/' .$niblet. '">' .$cleanString. '</a></li>';
-						}
 						echo '</ul>';
 						?>
 
