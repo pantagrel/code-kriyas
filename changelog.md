@@ -5,15 +5,15 @@ _Ballard Workshop's record of leisurely coding._
 ༼ つ ◕_◕ ༽つ
   _____
 
-* __7.03.14__ An aside, now, to consider the design elements of the Ballard Workshop website.
+* __7.03.14__ I'll take a sketching respite now to consider the design elements of the Ballard Workshop website and the steps I'll take to proceed with the subsequent portion of this first kriyic practice. [Sketch one](http://ballardworkshop.com/_img/sketch1_070314.jpg), [sketch two](http://ballardworkshop.com/_img/sketch2_070314.jpg).
 
-* __7.02.14__Now over 25% done with my initial kriyas goal of daily practice for 40 days. Yay! Also, maybe I'll make a button that sorts the index by user preference (ascending or descending date only at this time...but! that would be taking user feedback to alter your web experience. I know, I know. Nearly every fucking webpage on the planet can do that already. But _I_ didn't hand code those websites...so there's a big difference.)
+* __7.02.14__ Now over 25% done with my initial kriyas goal of daily practice for 40 days. Yay! Also, maybe I'll make a button that sorts the index by user preference (ascending or descending date only at this time...but! that would be taking user feedback to alter your web experience. I know, I know. Nearly every fucking webpage on the planet can do that already. But _I_ didn't hand code those websites...so there's a big difference.)
 
 * __7.01.14__ Functions are easy--standard stuff. So now I'm writing a function to build an associative array. Each file with the suffix of .php in a particular directory I want to be added to a particular array as a value. Then I want to add the last date that particular file was modified to be added to the array as the associated key. So that's what I'm doing right now...aaaaaand...there we go! An index page that generates out of a directory on a server and sorts itself by date create, with the most recent item at the top of the list.
 
 * __6.30.14__ Started in on functions. Following that will be learning more (and learning again) about arrays of arrays. No tuples in php! Want to sort the files by either date created or date last modified.
 
-* __6.29.14__ Made interior navigation work with array. Now, on first page and last page you should only see the appropriate directional guidance. Realized I was comparing keys with values, so once I matched up the comparison elements, things fell into place. Cleaned up how the index page displays the list of kriyas. Flipped the fork me graphic to live on the top left corner. It was getting in the way on the right side. Now I'm wondering what order the main index should display results. Listened to [Preachin' the Blues] (http://kexp.org/programs/PreachintheBlues) on KEXP. Best radio show. I get so excited for Sunday mornings.
+* __6.29.14__ Made interior navigation work with array. Now, on first page and last page you should only see the appropriate directional guidance. Realized I was comparing keys with values, so once I matched up the comparison elements, things fell into place. Cleaned up how the index page displays the list of kriyas. Flipped the fork me graphic to live on the top left corner. It was getting in the way on the right side. Now I'm wondering what order the main index should display results. Listened to [Preachin' the Blues](http://kexp.org/programs/PreachintheBlues) on KEXP. Best radio show. I get so excited for Sunday mornings.
   * Recent on top? Yes, I think so...but I need to add a date or a number and make the interior navigation reversed. Currently I click the first item and the nav I see says "previous", which doesn't make sense when it's the first thing I've looked at...
   * it would be cool to create an array on the fly that tracks what someone has seen and creates previous/next out of that info. "Unique" experience each time for each user.
   * it is intimidating to begin new chunks of work--it feels good to slowly update and bask in successful code/markup implementation. next steps, however:
@@ -34,7 +34,7 @@ _Ballard Workshop's record of leisurely coding._
   
    * No classic serifs. Too formal, diginified, polished. This work is not polished. (Though could the constrast create interesting tension within a viewer? Is 'tension' something that would build additional engagement? Or would this detail be too subtle and just come across as a poorly chosen typeface? Will have to invesigate!)
 
-* __6.26.14__ Found a [php function] (http://www.php.net/manual/en/function.str-replace.php) that finds and replaces string[bits] within arrays. I like the php documentation. Also like the "needle" in a "haystack" analogy they use for array examples. Was tired from drinking too much the night before. I haaaaaate hangovers. They're too depressing.
+* __6.26.14__ Found a [php function](http://www.php.net/manual/en/function.str-replace.php) that finds and replaces string[bits] within arrays. I like the php documentation. Also like the "needle" in a "haystack" analogy they use for array examples. Was tired from drinking too much the night before. I haaaaaate hangovers. They're too depressing.
 
 * __6.25.14__ Moved the php practice I've been doing into the index file. Converted all the files to .php. Removed the live site from the interwebs so I can focus on this work without worrying about how boring my live site looks.
 

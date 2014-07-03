@@ -9,7 +9,7 @@
 
 <body>
 	
-<?php include("_includes/functions.php"); ?>
+<?php include "_includes/functions.php"; ?>
 
 	<div id="page">
 		<div id="masthead">
