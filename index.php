@@ -59,5 +59,8 @@
 
 	</script>
 
+	<footer>
+			Grooly	
+	</footer>
 </body>
 </html>

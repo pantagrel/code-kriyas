@@ -38,8 +38,8 @@ function randomTrajectory(min, max){
 }
 
 function tick(event) {
-	circle1.x += randomTrajectory(1, 15);
-	circle1.y += randomTrajectory(1, 15);
+	circle1.x += 4;
+	circle1.y +=2;
 	circle2.x -=4;
 	circle2.y -=5;
 	circle3.x +=1;
@@ -57,11 +57,11 @@ function tick(event) {
 		circle2.x = (Math.random() * (750 - 0) + 0);
 		circle2.y = (Math.random() * (750 - 0) + 0);
 	}
-	if (circle3.y > 400){
+	if (circle3.y < 0){
 		circle3.x = 0;
 		circle3.y = 500;
 	}	
-	if (circle4.x > 300){
+	if (circle4.y < 0){
 		circle4.x = 0;
 		circle4.y = (Math.random() * (550 - 0) + 0);
 	}
