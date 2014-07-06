@@ -21,7 +21,7 @@
 				They follow their own simple math.
 			</h3>
 			<p>
-			One wonders what it's all worth. Snow falls.
+			One wonders what it's all worth. Rain falls.
 			</p>
 			
 		</div><!-- kriya -->

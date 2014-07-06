@@ -10,10 +10,12 @@
 				}	
 		}
 		// here's where i had to combine two arrays
-		$datedFiles = array_combine($tempDateHolder, $onlySuffixedFiles);
+		// $datedFiles = array_combine($tempDateHolder, $onlySuffixedFiles);
 		// sort by key:
-		krsort($datedFiles, $sort_flags = SORT_REGULAR);
-		return $datedFiles;
+		// krsort($datedFiles, $sort_flags = SORT_REGULAR);
+		// return $datedFiles;
+
+		return $onlySuffixedFiles;
 	}
 	// print_r(dateSort_directory('code-kriyas/', '.php'));
 ?>

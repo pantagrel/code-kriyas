@@ -30,7 +30,7 @@
 						foreach ($titlesList as $key => $value){
 								$trimKey = substr($key, 0, 8);
 								$prettyTitle = str_replace($unprettyChars, " ", $value);
-								echo '<li><span class="date">' .$trimKey. ':</span>  <span class="kriyaTitle"><a href="code-kriyas/'.$value.'">'.$prettyTitle.'</a></span></li>';
+								echo '<li><a href="code-kriyas/'.$value.'"><span class="date">' .$trimKey. ':</span>  <span class="kriyaTitle">'.$prettyTitle.'</a></span></li>';
 							}
 						echo '</ul>';
 						?>
