@@ -5,6 +5,8 @@ _Ballard Workshop's record of leisurely coding._
 ༼ つ ◕_◕ ༽つ
   _____
 
+* __070814__ Was too annoyed to sleep last night due to an exasperating request. Tired, grumpy, and still learning parallax scrolling this morning. Found a nice tutorial online...but then realized the fucking thing is chock full of custom javascript. What's the point? How do I learn how to use a library if someone else is going to modify the crap out of it? There's nuggets to take away, but also...but also...but also nothing, for now. Just kinda back to square one. Fucking tutorials. 
+
 * __070714__ More research of parallax scrolling. 
 
 * __070614__ Researching parallax scrolling, skrollr.
