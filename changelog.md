@@ -5,6 +5,10 @@ _Ballard Workshop's record of leisurely coding._
 ༼ つ ◕_◕ ༽つ
   _____
 
+* __070714__ More research of parallax scrolling. 
+
+* __070614__ Researching parallax scrolling, skrollr.
+
 * __070514__ Thought more about next steps. Tweaked and tweaked and tweaked color. Need to proceed and let color come later. Trying to pin an aesthetic onto a vague notion when I really should be pinning it onto a details specification. Began futzing again with the circles tests from February. 
 
 * __070414__ Squeezed my panicking dog and thought about next steps. As a result, did not see any fireworks.
