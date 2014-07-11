@@ -5,6 +5,8 @@ _Ballard Workshop's record of leisurely coding._
 ༼ つ ◕_◕ ༽つ
   _____
 
+* __071014__ I'm tired today. I am going to close my eyes and think about the shape of my future vision and that will be today's kriya.
+
 * __070914__ More parallax. Why am I spending so much time on this? Because I think it will lend itself well to storytelling. More to come on that thought. But for now, I figure out how to control this guttersnipe.
 
 * __070814__ Was too annoyed to sleep last night due to an exasperating request. Tired, grumpy, and still learning parallax scrolling this morning. Found a nice tutorial online...but then realized the fucking thing is chock full of custom javascript. What's the point? How do I learn how to use a library if someone else is going to modify the crap out of it? There's nuggets to take away, but also...but also...but also nothing, for now. Just kinda back to square one. Fucking tutorials. 
