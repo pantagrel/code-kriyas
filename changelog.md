@@ -5,11 +5,15 @@ _Ballard Workshop's record of leisurely coding._
 ༼ つ ◕_◕ ༽つ
   _____
 
+* __071914__ I missed one day...and then a week. Shoots. Ok. Back on track starting...now. With a review of simple website framework aesthetics.
+
+* __071214__ Well darnitall. Missed a day. I didn't really have anything to commit, though--the parallax stuff needs more direction. What IS my direction, though. This is, as it often is in life, a content question. The story stuff. 
+
 * __071014__ I'm tired today. I am going to close my eyes and think about the shape of my future vision and that will be today's kriya.
 
 * __070914__ More parallax. Why am I spending so much time on this? Because I think it will lend itself well to storytelling. More to come on that thought. But for now, I figure out how to control this guttersnipe.
 
-* __070814__ Was too annoyed to sleep last night due to an exasperating request. Tired, grumpy, and still learning parallax scrolling this morning. Found a nice tutorial online...but then realized the fucking thing is chock full of custom javascript. What's the point? How do I learn how to use a library if someone else is going to modify the crap out of it? There's nuggets to take away, but also...but also...but also nothing, for now. Just kinda back to square one. Fucking tutorials. 
+* __070814__ Was too annoyed to sleep last night due to an exasperating request. Tired, grumpy, and still learning parallax scrolling this morning. Found a nice tutorial online...but then realized the fucking thing is chock full of custom javascript. What's the point? How do I learn how to use a library if someone else is going to modify the crap out of it? There's nuggets to take away, but also...but also...but also nothing, for now. Just kinda back to square one. 
 
 * __070714__ More research of parallax scrolling. 
 
@@ -21,7 +25,7 @@ _Ballard Workshop's record of leisurely coding._
 
 * __070314__ I'll take a sketching respite now to consider the design elements of the Ballard Workshop website and the steps I'll take to proceed with the subsequent portion of this first kriyic practice. [Sketch one](http://ballardworkshop.com/_img/sketch1_070314.jpg), [sketch two](http://ballardworkshop.com/_img/sketch2_070314.jpg).
 
-* __070214__ Now over 25% done with my initial kriyas goal of daily practice for 40 days. Yay! Also, maybe I'll make a button that sorts the index by user preference (ascending or descending date only at this time...but! that would be taking user feedback to alter your web experience. I know, I know. Nearly every fucking webpage on the planet can do that already. But _I_ didn't hand code those websites...so there's a big difference.)
+* __070214__ Now over 25% done with my initial kriyas goal of daily practice for 40 days. Yay! Also, maybe I'll make a button that sorts the index by user preference (ascending or descending date only at this time...but! that would be taking user feedback to alter your web experience. I know, I know. Nearly every webpage on the planet can do that already. But _I_ didn't hand code those websites...so there's a big difference.)
 
 * __070114__ Functions are easy--standard stuff. So now I'm writing a function to build an associative array. Each file with the suffix of .php in a particular directory I want to be added to a particular array as a value. Then I want to add the last date that particular file was modified to be added to the array as the associated key. So that's what I'm doing right now...aaaaaand...there we go! An index page that generates out of a directory on a server and sorts itself by date create, with the most recent item at the top of the list.
 
