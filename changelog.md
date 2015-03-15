@@ -5,6 +5,8 @@ _Ballard Workshop's record of leisurely coding._
 ༼ つ ◕_◕ ༽つ
   _____
 
+* __112314__ Well sweet baby Jesus, it's been a while. I should explain why. But I'm not going to. Other than tell you: digital storytelling, content, layout, questions, on and on and on, what do I do? Back to this moment: right now I'm trying to figure out how to center a div inside of a div _but when it's at full and half page widths, okay?_ Also, I'm eating lasagna. Also, my sweet dogs are waiting to lick the plate. More this week, maybe. I should get back at those kriyas like a good girl. 
+
 * __071914__ I missed one day...and then a week. Shoots. Ok. Back on track starting...now. With a review of simple website framework aesthetics.
 
 * __071214__ Well darnitall. Missed a day. I didn't really have anything to commit, though--the parallax stuff needs more direction. What IS my direction, though. This is, as it often is in life, a content question. The story stuff. 

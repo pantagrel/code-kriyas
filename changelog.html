@@ -1,809 +1,1107 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><style>body
-{
-  font-size:15px;
-  line-height:1.7;
-  overflow-x:hidden;
-
-    background-color: white;
-    border-radius: 3px;
-    border: 3px solid #EEE;
-    box-shadow: inset 0 0 0 1px #CECECE;
-    font-family: Helvetica, arial, freesans, clean, sans-serif;
-    max-width: 912px;
-    padding: 30px;
-    margin: 2em auto;
-
-    color:#333333;
-}
-
-
-.body-classic{
-  color:#444;
-  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
-  font-size:16px;
-  line-height:1.5em;
-  background:#fefefe;
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
   width: 45em;
-  margin: 10px auto;
-  padding: 1em;
-  outline: 1300px solid #FAFAFA;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
 }
 
-body>:first-child
+body .markdown-body
 {
-  margin-top:0!important;
+  padding: 30px;
 }
 
-body>:last-child
-{
-  margin-bottom:0!important;
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
 }
 
-blockquote,dl,ol,p,pre,table,ul {
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
   border: 0;
-  margin: 15px 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
   padding: 0;
 }
 
-body a {
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
   color: #4183c4;
   text-decoration: none;
 }
 
-body a:hover {
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
   text-decoration: underline;
 }
 
-body a.absent
-{
-  color:#c00;
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
 }
 
-body a.anchor
-{
-  display:block;
-  padding-left:30px;
-  margin-left:-30px;
-  cursor:pointer;
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
 }
 
-/*h4,h5,h6{ font-weight: bold; }*/
-
-.octicon{
-  font:normal normal 16px sans-serif;
-  width: 1em;
-  height: 1em;
-  line-height:1;
-  display:inline-block;
-  text-decoration:none;
-  -webkit-font-smoothing:antialiased
+.markdown-body hr:after {
+  clear: both;
 }
 
-.octicon-link {
-  background: url("data:image/svg+xml;utf8,<?xml version='1.0' standalone='no'?> <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'> <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 832'> <metadata>Copyright (C) 2013 by GitHub</metadata> <!-- scale(0.01565557729941) --> <path transform='' d='M768 64h-192s-254 0-256 256c0 22 3 43 8 64h137c-11-19-18-41-18-64 0-128 128-128 128-128h192s128 0 128 128-128 128-128 128 0 64-64 128h64s256 0 256-256-256-256-256-256z m-72 192h-137c11 19 18 41 18 64 0 128-128 128-128 128h-192s-128 0-128-128 128-128 128-128-4-65 66-128h-66s-256 0-256 256 256 256 256 256h192s256 0 256-256c0-22-4-44-8-64z'/> </svg>");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
 }
 
-.octicon-link:before{
-  content:'\a0';
+.markdown-body h1 {
+  font-size: 30px;
 }
 
-body h1,body h2,body h3,body h4,body h5,body h6{
-  margin:1em 0 15px;
-  padding:0;
-  font-weight:bold;
-  line-height:1.7;
-  cursor:text;
-  position:relative
+.markdown-body h2 {
+  font-size: 21px;
 }
 
-body h1 .octicon-link,body h2 .octicon-link,body h3 .octicon-link,body h4 .octicon-link,body h5 .octicon-link,body h6 .octicon-link{
-  display:none;
-  color:#000
+.markdown-body h3 {
+  font-size: 16px;
 }
 
-body h1:hover a.anchor,body h2:hover a.anchor,body h3:hover a.anchor,body h4:hover a.anchor,body h5:hover a.anchor,body h6:hover a.anchor{
-  text-decoration:none;
-  line-height:1;
-  padding-left:0;
-  margin-left:-22px;
-  top:15%
+.markdown-body h4 {
+  font-size: 14px;
 }
 
-body h1:hover a.anchor .octicon-link,body h2:hover a.anchor .octicon-link,body h3:hover a.anchor .octicon-link,body h4:hover a.anchor .octicon-link,body h5:hover a.anchor .octicon-link,body h6:hover a.anchor .octicon-link{
-  display:inline-block
+.markdown-body h5 {
+  font-size: 12px;
 }
 
-body h1 tt,body h1 code,body h2 tt,body h2 code,body h3 tt,body h3 code,body h4 tt,body h4 code,body h5 tt,body h5 code,body h6 tt,body h6 code{
-  font-size:inherit
+.markdown-body h6 {
+  font-size: 11px;
 }
 
-body h1{
-  font-size:2.5em;
-  border-bottom:1px solid #ddd
+.markdown-body blockquote {
+  margin: 0;
 }
 
-body h2{
-  font-size:2em;
-  border-bottom:1px solid #eee
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-body h3{
-  font-size:1.5em
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
 }
 
-body h4{
-  font-size:1.2em
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
 }
 
-body h5{
-  font-size:1em
+.markdown-body dd {
+  margin-left: 0;
 }
 
-body h6{
-  color:#777;
-  font-size:1em
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
 }
 
-body p,body blockquote,body ul,body ol,body dl,body table,body pre{
-  margin:15px 0
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-body h1 tt,body h1 code,body h2 tt,body h2 code,body h3 tt,body h3 code,body h4 tt,body h4 code,body h5 tt,body h5 code,body h6 tt,body h6 code
-{
-  font-size:inherit;
-}
-
-
-body hr
-{
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC);
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
   background-repeat: repeat-x;
-  /*background:transparent url(http://overblown.net/files/markdown/dirty-shade.png) repeat-x 0 0;*/
-  background-color: transparent;
-  background-position: 0;
-  border:0 none;
-  color:#ccc;
-  height:4px;
-  margin:15px 0;
-  padding:0;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
 }
 
-body li p.first
-{
-  display:inline-block;
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
 }
 
-body ul,body ol
-{
-  padding-left:30px;
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
 }
 
-body ul.no-list,body ol.no-list
-{
-  list-style-type:none;
-  padding:0;
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
 }
 
-body ul ul,body ul ol,body ol ol,body ol ul
-{
-  margin-bottom:0;
-  margin-top:0;
+.markdown-body .headeranchor-link:focus {
+  outline: none;
 }
 
-body dl
-{
-  padding:0;
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
-body dl dt
-{
-  font-size:14px;
-  font-style:italic;
-  font-weight:700;
-  margin-top:15px;
-  padding:0;
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
 }
 
-body dl dd
-{
-  margin-bottom:15px;
-  padding:0 15px;
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
 }
 
-body blockquote
-{
-  border-left:4px solid #DDD;
-  color:#777;
-  padding:0 15px;
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
 }
 
-body blockquote>:first-child
-{
-  margin-top:0;
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
 }
 
-body blockquote>:last-child
-{
-  margin-bottom:0;
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
 }
 
-body table
-{
-  display:block;
-  overflow:auto;
-  width:100%;
-  border-collapse: collapse;
-  border-spacing: 0;
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
   padding: 0;
 }
 
-body table th
-{
-  font-weight:700;
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
 }
 
-body table th,body table td
-{
-  border:1px solid #ddd;
-  padding:6px 13px;
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
 }
 
-body table tr
-{
-  background-color:#fff;
-  border-top:1px solid #ccc;
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
 }
 
-body table tr:nth-child(2n)
-{
-  background-color:#f8f8f8;
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
 }
 
-body img
-{
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-  max-width:100%;
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
 }
 
-body span.frame
-{
-  display:block;
-  overflow:hidden;
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
 }
 
-body span.frame>span
-{
-  border:1px solid #ddd;
-  display:block;
-  float:left;
-  margin:13px 0 0;
-  overflow:hidden;
-  padding:7px;
-  width:auto;
+.markdown-body table th {
+  font-weight: bold;
 }
 
-body span.frame span img
-{
-  display:block;
-  float:left;
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
 }
 
-body span.frame span span
-{
-  clear:both;
-  color:#333;
-  display:block;
-  padding:5px 0 0;
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
 }
 
-body span.align-center
-{
-  clear:both;
-  display:block;
-  overflow:hidden;
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
 }
 
-body span.align-center>span
-{
-  display:block;
-  margin:13px auto 0;
-  overflow:hidden;
-  text-align:center;
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body span.align-center span img
-{
-  margin:0 auto;
-  text-align:center;
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
 }
 
-body span.align-right
-{
-  clear:both;
-  display:block;
-  overflow:hidden;
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
 }
 
-body span.align-right>span
-{
-  display:block;
-  margin:13px 0 0;
-  overflow:hidden;
-  text-align:right;
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
 }
 
-body span.align-right span img
-{
-  margin:0;
-  text-align:right;
+.markdown-body .codehilite {
+  margin-bottom: 16px;
 }
 
-body span.float-left
-{
-  display:block;
-  float:left;
-  margin-right:13px;
-  overflow:hidden;
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
 }
 
-body span.float-left span
-{
-  margin:13px 0 0;
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
 }
 
-body span.float-right
-{
-  display:block;
-  float:right;
-  margin-left:13px;
-  overflow:hidden;
+.markdown-body pre {
+  word-wrap: normal;
 }
 
-body span.float-right>span
-{
-  display:block;
-  margin:13px auto 0;
-  overflow:hidden;
-  text-align:right;
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
 }
 
-body code,body tt
-{
-  background-color:#f8f8f8;
-  border:1px solid #ddd;
-  border-radius:3px;
-  margin:0 2px;
-  padding:0 5px;
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
 }
 
-body code
-{
-  white-space:nowrap;
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
 }
 
-
-code,pre{
-  font-family:Consolas, "Liberation Mono", Courier, monospace;
-  font-size:12px
-}
-
-body pre>code
-{
-  background:transparent;
-  border:none;
-  margin:0;
-  padding:0;
-  white-space:pre;
-}
-
-body .highlight pre,body pre
-{
-  background-color:#f8f8f8;
-  border:1px solid #ddd;
-  font-size:13px;
-  line-height:19px;
-  overflow:auto;
-  padding:6px 10px;
-  border-radius:3px
-}
-
-body pre code,body pre tt
-{
-  background-color:transparent;
-  border:none;
-  margin:0;
-  padding:0;
-}
-
-body .task-list{
-  list-style-type:none;
-  padding-left:10px
-}
-
-.task-list-item{
-  padding-left:20px
-}
-
-.task-list-item label{
-  font-weight:normal
-}
-
-.task-list-item.enabled label{
-  cursor:pointer
+.markdown-body .admonition table {
+  color: #333;
 }
-
-.task-list-item+.task-list-item{
-  margin-top:5px
-}
-
-.task-list-item-checkbox{
-  float:left;
-  margin-left:-20px;
-  margin-top:7px
-}
-
 
-.highlight{
-  background:#ffffff
+.markdown-body .admonition p {
+  padding: 0;
 }
 
-.highlight .c{
-  color:#999988;
-  font-style:italic
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
 }
 
-.highlight .err{
-  color:#a61717;
-  background-color:#e3d2d2
+.markdown-body .admonition>.admonition-title {
+  color: #333;
 }
 
-.highlight .k{
-  font-weight:bold
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
 }
 
-.highlight .o{
-  font-weight:bold
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
 }
 
-.highlight .cm{
-  color:#999988;
-  font-style:italic
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
 }
 
-.highlight .cp{
-  color:#999999;
-  font-weight:bold
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
 }
 
-.highlight .c1{
-  color:#999988;
-  font-style:italic
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
 }
 
-.highlight .cs{
-  color:#999999;
-  font-weight:bold;
-  font-style:italic
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
 }
 
-.highlight .gd{
-  color:#000000;
-  background-color:#ffdddd
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
-.highlight .gd .x{
-  color:#000000;
-  background-color:#ffaaaa
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
 }
 
-.highlight .ge{
-  font-style:italic
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
 }
 
-.highlight .gr{
-  color:#aa0000
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
 }
 
-.highlight .gh{
-  color:#999999
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
 }
 
-.highlight .gi{
-  color:#000000;
-  background-color:#ddffdd
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
 }
 
-.highlight .gi .x{
-  color:#000000;
-  background-color:#aaffaa
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
 }
 
-.highlight .go{
-  color:#888888
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
 }
 
-.highlight .gp{
-  color:#555555
+.markdown-body .admonition::after {
+  content: normal;
 }
 
-.highlight .gs{
-  font-weight:bold
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
 }
 
-.highlight .gu{
-  color:#800080;
-  font-weight:bold
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
 }
 
-.highlight .gt{
-  color:#aa0000
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
 }
 
-.highlight .kc{
-  font-weight:bold
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
 }
 
-.highlight .kd{
-  font-weight:bold
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
 }
 
-.highlight .kn{
-  font-weight:bold
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
 }
 
-.highlight .kp{
-  font-weight:bold
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
 }
 
-.highlight .kr{
-  font-weight:bold
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
 }
 
-.highlight .kt{
-  color:#445588;
-  font-weight:bold
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
 }
 
-.highlight .m{
-  color:#009999
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.highlight .s{
-  color:#d14
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
 }
 
-.highlight .n{
-  color:#333333
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
 }
 
-.highlight .na{
-  color:#008080
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
 }
 
-.highlight .nb{
-  color:#0086B3
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
 }
 
-.highlight .nc{
-  color:#445588;
-  font-weight:bold
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
 }
 
-.highlight .no{
-  color:#008080
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
 }
 
-.highlight .ni{
-  color:#800080
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
 }
 
-.highlight .ne{
-  color:#990000;
-  font-weight:bold
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
 }
 
-.highlight .nf{
-  color:#990000;
-  font-weight:bold
-}
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
 
-.highlight .nn{
-  color:#555555
+  100% {
+    background-position: 60px 0;
+  }
 }
 
-.highlight .nt{
-  color:#000080
-}
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
 
-.highlight .nv{
-  color:#008080
+  100% {
+    background-position: 60px 0;
+  }
 }
 
-.highlight .ow{
-  font-weight:bold
-}
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
 
-.highlight .w{
-  color:#bbbbbb
+  100% {
+    background-position: 60px 0;
+  }
 }
 
-.highlight .mf{
-  color:#009999
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
 }
 
-.highlight .mh{
-  color:#009999
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
 }
 
-.highlight .mi{
-  color:#009999
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
 }
 
-.highlight .mo{
-  color:#009999
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
 }
 
-.highlight .sb{
-  color:#d14
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
 }
 
-.highlight .sc{
-  color:#d14
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.highlight .sd{
-  color:#d14
+.headeranchor:before {
+  content: '\f05c';
 }
 
-.highlight .s2{
-  color:#d14
+.markdown-body .task-list-item {
+  list-style-type: none;
 }
 
-.highlight .se{
-  color:#d14
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
 }
 
-.highlight .sh{
-  color:#d14
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
 }
 
-.highlight .si{
-  color:#d14
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
 }
 
-.highlight .sx{
-  color:#d14
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
 }
 
-.highlight .sr{
-  color:#009926
-}
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
 
-.highlight .s1{
-  color:#d14
-}
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
 
-.highlight .ss{
-  color:#990073
-}
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
 
-.highlight .bp{
-  color:#999999
-}
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
 
-.highlight .vc{
-  color:#008080
-}
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-.highlight .vg{
-  color:#008080
-}
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-.highlight .vi{
-  color:#008080
-}
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
 
-.highlight .il{
-  color:#009999
-}
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
 
-.highlight .gc{
-  color:#999;
-  background-color:#EAF2F5
-}
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
 
-.type-csharp .highlight .k{
-  color:#0000FF
-}
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 
-.type-csharp .highlight .kt{
-  color:#0000FF
-}
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
 
-.type-csharp .highlight .nf{
-  color:#000000;
-  font-weight:normal
-}
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
 
-.type-csharp .highlight .nc{
-  color:#2B91AF
-}
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
 
-.type-csharp .highlight .nn{
-  color:#000000
-}
+  .markdown-body img {
+    max-width: 100% !important;
+  }
 
-.type-csharp .highlight .s{
-  color:#A31515
-}
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-.type-csharp .highlight .sc{
-  color:#A31515
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
 }
-</style><title>changelog</title></head><body><h1>
-<a name="user-content--changelog-" class="anchor" href="#-changelog-" aria-hidden="true"><span class="octicon octicon-link"></span></a>/ CHANGELOG /</h1>
-
-<p><em>Ballard Workshop's record of leisurely coding.</em></p>
-
+</style><title>changelog</title></head><body><article class="markdown-body"><h1 id="changelog"><a name="user-content-changelog" href="#changelog" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>/ CHANGELOG /</h1>
+<p><em>Ballard Workshop&rsquo;s record of leisurely coding.</em></p>
 <p>༼ つ ◕_◕ ༽つ</p>
-
-<hr><ul>
-<li><p><strong>071914</strong> I missed one day...and then a week. Shoots. Ok. Back on track starting...now. With a review of simple website framework aesthetics.</p></li>
-<li><p><strong>071214</strong> Well darnitall. Missed a day. I didn't really have anything to commit, though--the parallax stuff needs more direction. What IS my direction, though. This is, as it often is in life, a content question. The story stuff. </p></li>
-<li><p><strong>071014</strong> I'm tired today. I am going to close my eyes and think about the shape of my future vision and that will be today's kriya.</p></li>
-<li><p><strong>070914</strong> More parallax. Why am I spending so much time on this? Because I think it will lend itself well to storytelling. More to come on that thought. But for now, I figure out how to control this guttersnipe.</p></li>
-<li><p><strong>070814</strong> Was too annoyed to sleep last night due to an exasperating request. Tired, grumpy, and still learning parallax scrolling this morning. Found a nice tutorial online...but then realized the fucking thing is chock full of custom javascript. What's the point? How do I learn how to use a library if someone else is going to modify the crap out of it? There's nuggets to take away, but also...but also...but also nothing, for now. Just kinda back to square one. </p></li>
-<li><p><strong>070714</strong> More research of parallax scrolling. </p></li>
-<li><p><strong>070614</strong> Researching parallax scrolling, skrollr.</p></li>
-<li><p><strong>070514</strong> Thought more about next steps. Tweaked and tweaked and tweaked color. Need to proceed and let color come later. Trying to pin an aesthetic onto a vague notion when I really should be pinning it onto a details specification. Began futzing again with the circles tests from February. </p></li>
-<li><p><strong>070414</strong> Squeezed my panicking dog and thought about next steps. As a result, did not see any fireworks.</p></li>
-<li><p><strong>070314</strong> I'll take a sketching respite now to consider the design elements of the Ballard Workshop website and the steps I'll take to proceed with the subsequent portion of this first kriyic practice. <a href="http://ballardworkshop.com/_img/sketch1_070314.jpg">Sketch one</a>, <a href="http://ballardworkshop.com/_img/sketch2_070314.jpg">sketch two</a>.</p></li>
-<li><p><strong>070214</strong> Now over 25% done with my initial kriyas goal of daily practice for 40 days. Yay! Also, maybe I'll make a button that sorts the index by user preference (ascending or descending date only at this time...but! that would be taking user feedback to alter your web experience. I know, I know. Nearly every webpage on the planet can do that already. But <em>I</em> didn't hand code those websites...so there's a big difference.)</p></li>
-<li><p><strong>070114</strong> Functions are easy--standard stuff. So now I'm writing a function to build an associative array. Each file with the suffix of .php in a particular directory I want to be added to a particular array as a value. Then I want to add the last date that particular file was modified to be added to the array as the associated key. So that's what I'm doing right now...aaaaaand...there we go! An index page that generates out of a directory on a server and sorts itself by date create, with the most recent item at the top of the list.</p></li>
-<li><p><strong>063014</strong> Started in on functions. Following that will be learning more (and learning again) about arrays of arrays. No tuples in php! Want to sort the files by either date created or date last modified.</p></li>
-<li>
-<p><strong>062914</strong> Made interior navigation work with array. Now, on first page and last page you should only see the appropriate directional guidance. Realized I was comparing keys with values, so once I matched up the comparison elements, things fell into place. Cleaned up how the index page displays the list of kriyas. Flipped the fork me graphic to live on the top left corner. It was getting in the way on the right side. Now I'm wondering what order the main index should display results. Listened to <a href="http://kexp.org/programs/PreachintheBlues">Preachin' the Blues</a> on KEXP. Best radio show. I get so excited for Sunday mornings.</p>
-
+<hr />
 <ul>
-<li>Recent on top? Yes, I think so...but I need to add a date or a number and make the interior navigation reversed. Currently I click the first item and the nav I see says "previous", which doesn't make sense when it's the first thing I've looked at...</li>
-<li>it would be cool to create an array on the fly that tracks what someone has seen and creates previous/next out of that info. "Unique" experience each time for each user.</li>
-<li>it is intimidating to begin new chunks of work--it feels good to slowly update and bask in successful code/markup implementation. next steps, however:
-
+<li>
+<p><strong>112314</strong> Well sweet baby Jesus, it&rsquo;s been a while. I should explain why. But I&rsquo;m not going to. Other than tell you: digital storytelling, content, layout, questions, on and on and on, what do I do? Back to this moment: right now I&rsquo;m trying to figure out how to center a div inside of a div <em>but when it&rsquo;s at full and half page widths, okay?</em> Also, I&rsquo;m eating lasagna. Also, my sweet dogs are waiting to lick the plate. More this week, maybe. I should get back at those kriyas like a good girl. </p>
+</li>
+<li>
+<p><strong>071914</strong> I missed one day&hellip;and then a week. Shoots. Ok. Back on track starting&hellip;now. With a review of simple website framework aesthetics.</p>
+</li>
+<li>
+<p><strong>071214</strong> Well darnitall. Missed a day. I didn&rsquo;t really have anything to commit, though&ndash;the parallax stuff needs more direction. What IS my direction, though. This is, as it often is in life, a content question. The story stuff. </p>
+</li>
+<li>
+<p><strong>071014</strong> I&rsquo;m tired today. I am going to close my eyes and think about the shape of my future vision and that will be today&rsquo;s kriya.</p>
+</li>
+<li>
+<p><strong>070914</strong> More parallax. Why am I spending so much time on this? Because I think it will lend itself well to storytelling. More to come on that thought. But for now, I figure out how to control this guttersnipe.</p>
+</li>
+<li>
+<p><strong>070814</strong> Was too annoyed to sleep last night due to an exasperating request. Tired, grumpy, and still learning parallax scrolling this morning. Found a nice tutorial online&hellip;but then realized the fucking thing is chock full of custom javascript. What&rsquo;s the point? How do I learn how to use a library if someone else is going to modify the crap out of it? There&rsquo;s nuggets to take away, but also&hellip;but also&hellip;but also nothing, for now. Just kinda back to square one. </p>
+</li>
+<li>
+<p><strong>070714</strong> More research of parallax scrolling. </p>
+</li>
+<li>
+<p><strong>070614</strong> Researching parallax scrolling, skrollr.</p>
+</li>
+<li>
+<p><strong>070514</strong> Thought more about next steps. Tweaked and tweaked and tweaked color. Need to proceed and let color come later. Trying to pin an aesthetic onto a vague notion when I really should be pinning it onto a details specification. Began futzing again with the circles tests from February. </p>
+</li>
+<li>
+<p><strong>070414</strong> Squeezed my panicking dog and thought about next steps. As a result, did not see any fireworks.</p>
+</li>
+<li>
+<p><strong>070314</strong> I&rsquo;ll take a sketching respite now to consider the design elements of the Ballard Workshop website and the steps I&rsquo;ll take to proceed with the subsequent portion of this first kriyic practice. <a href="http://ballardworkshop.com/_img/sketch1_070314.jpg">Sketch one</a>, <a href="http://ballardworkshop.com/_img/sketch2_070314.jpg">sketch two</a>.</p>
+</li>
+<li>
+<p><strong>070214</strong> Now over 25% done with my initial kriyas goal of daily practice for 40 days. Yay! Also, maybe I&rsquo;ll make a button that sorts the index by user preference (ascending or descending date only at this time&hellip;but! that would be taking user feedback to alter your web experience. I know, I know. Nearly every webpage on the planet can do that already. But <em>I</em> didn&rsquo;t hand code those websites&hellip;so there&rsquo;s a big difference.)</p>
+</li>
+<li>
+<p><strong>070114</strong> Functions are easy&ndash;standard stuff. So now I&rsquo;m writing a function to build an associative array. Each file with the suffix of .php in a particular directory I want to be added to a particular array as a value. Then I want to add the last date that particular file was modified to be added to the array as the associated key. So that&rsquo;s what I&rsquo;m doing right now&hellip;aaaaaand&hellip;there we go! An index page that generates out of a directory on a server and sorts itself by date create, with the most recent item at the top of the list.</p>
+</li>
+<li>
+<p><strong>063014</strong> Started in on functions. Following that will be learning more (and learning again) about arrays of arrays. No tuples in php! Want to sort the files by either date created or date last modified.</p>
+</li>
+<li>
+<p><strong>062914</strong> Made interior navigation work with array. Now, on first page and last page you should only see the appropriate directional guidance. Realized I was comparing keys with values, so once I matched up the comparison elements, things fell into place. Cleaned up how the index page displays the list of kriyas. Flipped the fork me graphic to live on the top left corner. It was getting in the way on the right side. Now I&rsquo;m wondering what order the main index should display results. Listened to <a href="http://kexp.org/programs/PreachintheBlues">Preachin&rsquo; the Blues</a> on KEXP. Best radio show. I get so excited for Sunday mornings.</p>
+</li>
+<li>Recent on top? Yes, I think so&hellip;but I need to add a date or a number and make the interior navigation reversed. Currently I click the first item and the nav I see says &ldquo;previous&rdquo;, which doesn&rsquo;t make sense when it&rsquo;s the first thing I&rsquo;ve looked at&hellip;</li>
+<li>it would be cool to create an array on the fly that tracks what someone has seen and creates previous/next out of that info. &ldquo;Unique&rdquo; experience each time for each user.</li>
+<li>
+<p>it is intimidating to begin new chunks of work&ndash;it feels good to slowly update and bask in successful code/markup implementation. next steps, however:</p>
 <ul>
 <li>make the nav into svg graphics</li>
 <li>add js flags to show the name of the upcoming file</li>
 <li>move nav from top to sidebar? or at least make it responsive from its current position</li>
 </ul>
 </li>
-</ul>
-</li>
-<li><p><strong>062814</strong> Added this change log to this live site. Set up a top nav for the interior pages of the 'kriyas' exporlations that are to come. Set up a template file that uses the php includes command to pull in the navigation. Created a snippet of that template file (Sublime Text 2's templating system) which has the base framework for the code experiments--navigation and an HTML shell, with placeholder copy for content that will need to be tweaked for each separate file. Snippets are pretty boss. There will definitely need to be more of these created at a future date. Moved from having everything be black, white and red, to shades of blue and cream. Blue is more Ballard--it looks more <em>right</em> right now. </p></li>
 <li>
-<p><strong>062714</strong> Looked at fonts, created this change log and backfilled the entries. Font finding: attempted to do it calmly and with direction b/c this type of activity (selecting fonts, colors, etc) can be overwhelming for me. Easy to get diverted towards unplanned directions. I'd like to learn to be more <em>consistently</em> deliberate about my choices, and I'm finding it helps to identify a driving ethos: </p>
-
-<ul>
-<li>"Funky interior shapes, slightly irregular as relates to the overall shape. Readable, friendly, a bit organic. Looks like the code work I'm doing: a bit wonky.</li>
+<p><strong>062814</strong> Added this change log to this live site. Set up a top nav for the interior pages of the &lsquo;kriyas&rsquo; exporlations that are to come. Set up a template file that uses the php includes command to pull in the navigation. Created a snippet of that template file (Sublime Text 2&rsquo;s templating system) which has the base framework for the code experiments&ndash;navigation and an HTML shell, with placeholder copy for content that will need to be tweaked for each separate file. Snippets are pretty boss. There will definitely need to be more of these created at a future date. Moved from having everything be black, white and red, to shades of blue and cream. Blue is more Ballard&ndash;it looks more <em>right</em> right now. </p>
+</li>
+<li>
+<p><strong>062714</strong> Looked at fonts, created this change log and backfilled the entries. Font finding: attempted to do it calmly and with direction b/c this type of activity (selecting fonts, colors, etc) can be overwhelming for me. Easy to get diverted towards unplanned directions. I&rsquo;d like to learn to be more <em>consistently</em> deliberate about my choices, and I&rsquo;m finding it helps to identify a driving ethos: </p>
+</li>
+<li>&ldquo;Funky interior shapes, slightly irregular as relates to the overall shape. Readable, friendly, a bit organic. Looks like the code work I&rsquo;m doing: a bit wonky.</li>
 <li>Chunky sans serif? Upper and lower case, or (if all uc or lc) two typefaces: one for titling, one for body copy. </li>
 </ul>
 <p>I guess the driving ethos goes back to the simple question of WHY? </p>
-
-<p>I could also identify what I don't want and that could be another sort of driving ethos:</p>
-
+<p>I could also identify what I don&rsquo;t want and that could be another sort of driving ethos:</p>
 <ul>
-<li>No classic serifs. Too formal, diginified, polished. This work is not polished. (Though could the constrast create interesting tension within a viewer? Is 'tension' something that would build additional engagement? Or would this detail be too subtle and just come across as a poorly chosen typeface? Will have to invesigate!)</li>
-</ul>
+<li>
+<p>No classic serifs. Too formal, diginified, polished. This work is not polished. (Though could the constrast create interesting tension within a viewer? Is &lsquo;tension&rsquo; something that would build additional engagement? Or would this detail be too subtle and just come across as a poorly chosen typeface? Will have to invesigate!)</p>
 </li>
-<li><p><strong>062614</strong> Found a <a href="http://www.php.net/manual/en/function.str-replace.php">php function</a> that finds and replaces string[bits] within arrays. I like the php documentation. Also like the "needle" in a "haystack" analogy they use for array examples. Was tired from drinking too much the night before. I haaaaaate hangovers. They're too depressing.</p></li>
-<li><p><strong>062514</strong> Moved the php practice I've been doing into the index file. Converted all the files to .php. Removed the live site from the interwebs so I can focus on this work without worrying about how boring my live site looks.</p></li>
-<li><p><strong>062414</strong> Worked on creating "next" and "previous" functionality. Easy enough with use of array and $item-1/$item+1. The harder part seems like it will be attaching js animations to the links (the 'flag' which I've seen on other sites that pops out with the name of the page you're going to. looks groovy.) </p></li>
-<li><p><strong>062314</strong> Delving again into php. Yesssss! Coding is fun no matter your level. Started using php documentation. Set up php file that returned into my browser the contents of a directory. Using MAMP as my 'server' so I can test php stuff on my local machine.</p></li>
-<li><p><strong>062214</strong> Dusted the cobwebs off the github page. Reconfigured and renamed the repo to be more tightly defined than before. Fussed with styling of the user-facing site. Tweaked the github readme content to have more accurate info.</p></li>
-</ul></body></html>
+<li>
+<p><strong>062614</strong> Found a <a href="http://www.php.net/manual/en/function.str-replace.php">php function</a> that finds and replaces string[bits] within arrays. I like the php documentation. Also like the &ldquo;needle&rdquo; in a &ldquo;haystack&rdquo; analogy they use for array examples. Was tired from drinking too much the night before. I haaaaaate hangovers. They&rsquo;re too depressing.</p>
+</li>
+<li>
+<p><strong>062514</strong> Moved the php practice I&rsquo;ve been doing into the index file. Converted all the files to .php. Removed the live site from the interwebs so I can focus on this work without worrying about how boring my live site looks.</p>
+</li>
+<li>
+<p><strong>062414</strong> Worked on creating &ldquo;next&rdquo; and &ldquo;previous&rdquo; functionality. Easy enough with use of array and $item-1/$item+1. The harder part seems like it will be attaching js animations to the links (the &lsquo;flag&rsquo; which I&rsquo;ve seen on other sites that pops out with the name of the page you&rsquo;re going to. looks groovy.) </p>
+</li>
+<li>
+<p><strong>062314</strong> Delving again into php. Yesssss! Coding is fun no matter your level. Started using php documentation. Set up php file that returned into my browser the contents of a directory. Using MAMP as my &lsquo;server&rsquo; so I can test php stuff on my local machine.</p>
+</li>
+<li>
+<p><strong>062214</strong> Dusted the cobwebs off the github page. Reconfigured and renamed the repo to be more tightly defined than before. Fussed with styling of the user-facing site. Tweaked the github readme content to have more accurate info.</p>
+</li>
+</ul></article></body></html>

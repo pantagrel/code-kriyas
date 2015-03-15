@@ -34,7 +34,7 @@
 							}
 						echo '</ul>';
 						?>
-
+						<li>Hi, I'm the list.</li>
 					</ul>
 				</nav>
 			</div><!--navContainer-->
