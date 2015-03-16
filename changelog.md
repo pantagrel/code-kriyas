@@ -5,7 +5,7 @@ _Ballard Workshop's record of leisurely coding._
 ༼ つ ◕_◕ ༽つ
   _____
 
-* __031414__ Dusting this project off. Some ideas, some blank spots. May we all exercise self control.
+* __031415__ Dusting this project off. Some ideas, some blank spots. May we all exercise self control.
 
 * __112314__ Well sweet baby Jesus, it's been a while. I should explain why. But I'm not going to. Other than tell you: digital storytelling, content, layout, questions, on and on and on, what do I do? Back to this moment: right now I'm trying to figure out how to center a div inside of a div _but when it's at full and half page widths, okay?_ Also, I'm eating lasagna. Also, my sweet dogs are waiting to lick the plate. More this week, maybe. I should get back at those kriyas like a good girl. 
 
