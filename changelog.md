@@ -5,7 +5,9 @@ _Ballard Workshop's record of leisurely coding._
 =^..^=
   _____
 
-* __031615__ Beginning a serve-up-random-stuff thingy. 
+* __031715__ Seven-year anniversary at Employer. Not the plan originally, but happy it's worked out to be what it is. Learned a lot and taken unexpected, interesting paths. Also removed a kriya with which I felt unsatisfied and an giving some thought to Other Media. These thoughts will, I presume, coincide wit the random-stuff-thingy.
+
+* __031615__ Beginning a random-stuff-thingy. 
 
 * __031515__ Is adding to the changelog part of the daily kriya? Right now...no. Doing something that can be committed = yes. Also thinking about mystuff/yourstuff. Spacesavers. Boundarylands.
 
