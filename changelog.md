@@ -5,6 +5,8 @@ _Ballard Workshop's record of leisurely coding._
 =^..^=
   _____
 
+* __031615__ Beginning a serve-up-random-stuff thingy. 
+
 * __031515__ Is adding to the changelog part of the daily kriya? Right now...no. Doing something that can be committed = yes. Also thinking about mystuff/yourstuff. Spacesavers. Boundarylands.
 
 * __031415__ Dusting this project off. Some ideas, some blank spots. May we all exercise self control.
