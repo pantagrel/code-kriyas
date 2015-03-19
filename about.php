@@ -11,16 +11,16 @@
 	
 <?php 
 	include '_includes/kriyas-header.php';
-	include '_includes/functions.php';
-	include '_includes/variables.php';
+	//include '_includes/functions.php';
+	//include '_includes/variables.php';
 ?>
 
 
-	<div id="page">
+	<div id="about_page">
 		<?php
-			show_aboutText();
+			echo "<p>hi monkey</p>";
 		?>
-	</div><!-- page -->
+	</div><!-- about_page -->
 
 </body>
 </html>
