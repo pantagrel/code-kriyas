@@ -3,7 +3,9 @@
 _Ballard Workshop's record of leisurely coding._
 
 =^..^=
-  _____
+_____
+
+* __031815__ Nothing to report today. 
 
 * __031715__ Seven-year anniversary at Employer. Not the plan originally, but happy it's worked out to be what it is. Learned a lot and taken unexpected, interesting paths. Also removed a kriya with which I felt unsatisfied and an giving some thought to Other Media. These thoughts will, I presume, coincide wit the random-stuff-thingy.
 
