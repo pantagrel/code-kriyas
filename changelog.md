@@ -5,6 +5,8 @@ _Ballard Workshop's record of leisurely coding._
 =^..^=
 _____
 
+* __032015__ More functions & arrays & includes & file separations. Fun! And some rainbow relaxation. Also, socialization as rejuvenation? What a weird, not real concept. 
+
 * __031915__ Creating arrays, learning about ways to randomly pull up files. External files, external functions. Also working on remembering the little bit I learned last summer. 
 
 * __031815__ Nothing to report today. 
