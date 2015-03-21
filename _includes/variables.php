@@ -1,14 +1,15 @@
 <?php
-	$about1 = 
+	$about_array = array(
+	"about1" =>  
 		"<p>
 		Scintillus is a work in progress. We aim to cultivate a creative community for people who want to make compelling and beautiful work on small scales. We are interested in low- or no-budget enterprises, being out and about, and the nebulous realm where ideas, emotions and the singular beauty of the physical world converge. We like animated conversation with well-informed people.
 		</p><p>
 		We want independence from routine and the freedom to act naturally. We want to reduce and reuse before we recycle. We want to celebrate in our way, however we can, the dazzling weirdness in the spectrum of life, from black holes to mascara.
 		</p><p>
 		We are ambitious, we are curious. We believe that perfection is a difficult myth and no person is entirely what they seem. We like our space. We aren’t exclusive. We love earnestness and geeky devotion to the good idea. We strive for balance.
-		</p>"
+		</p>",
 		
-	$about2 = 
+	"about2" => 
 		"<p>
 		Yeah, it’s a story. Parts are real, other parts are more real. I don’t know which is which. I’m just trying something. There’s a space, unexplored, between paper and website and movie and it calls to me. I’m poking around. Maybe this is silly, maybe this is awesome. Maybe it’s both. 
 		</p><p>
@@ -17,9 +18,9 @@
 		Right now this whole thing is just digital. But soon there will be physical versions. Bound books, video-filled USB sticks, who knows.
 		</p><p>
 		What are you trying? I’d like to know. 
-		</p>"
+		</p>",
 	
-	$about3 = 
+	"about3" => 
 		"<p>
 		This thing is a story thing. Like a combinatorial garden or something.
 		</p><p>
@@ -33,4 +34,5 @@
 		</p><p>
 		I have be come to the happy, terrifying realization that I will not be happy unless I am making things up and pretending those things are real. Rather, I will not be happy unless I am making things from inside me become real things outside me.
 		</p>"
+
 ?>
