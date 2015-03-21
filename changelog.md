@@ -5,6 +5,8 @@ _Ballard Workshop's record of leisurely coding._
 =^..^=
 _____
 
+* __032115__ A question to take forward: is this effort helpful? Also, consider video optimization for short looping videos.
+
 * __032015__ More functions & arrays & includes & file separations. Fun! And some rainbow relaxation. Also, socialization as rejuvenation? What a weird, not real concept. Also, jerks in the most unexpected places. *shakes head*
 
 * __031915__ Creating arrays, learning about ways to randomly pull up files. External files, external functions. Also working on remembering the little bit I learned last summer. 
