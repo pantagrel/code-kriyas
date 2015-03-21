@@ -23,14 +23,10 @@
 <?php
 		function square()
 		{
-			$array = array(
-				"this is story one",
-				"this is story two",
-				"this is story three",
-				"this is story four",
-				);
-		$rand_key = array_rand($array);
-		$rand_value = $array[$rand_key];
+			include '_includes/variables.php';
+		$rand_key = array_rand($about_array);
+		$rand_value = $about_array[$rand_key];
 		return $rand_value;
+			// print_r($about_array);
 		}
 ?>

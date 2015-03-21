@@ -34,5 +34,6 @@
 		</p><p>
 		I have be come to the happy, terrifying realization that I will not be happy unless I am making things up and pretending those things are real. Rather, I will not be happy unless I am making things from inside me become real things outside me.
 		</p>"
+		);
 
 ?>

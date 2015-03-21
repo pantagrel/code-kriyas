@@ -34,7 +34,10 @@
 							}
 						echo '</ul>';
 						?>
-						<li style="text-transform: none"><a href="changelog.html">Hi, I'm the changelog.</a></li>
+						<li style="text-transform: none"><a href="about.php" style="font-weight: bold">About Ballard Workshop</a></li>
+
+						<li style="text-transform: none"><a href="changelog.html">Changelog</a></li>
+
 					</ul>
 				</nav>
 			</div><!--navContainer-->
