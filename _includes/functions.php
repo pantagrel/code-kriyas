@@ -24,12 +24,13 @@
 		function square()
 		{
 			$array = array(
-				"one" => "this is story one",
-				"two" => "this is story two",
-				"three" => "this is story three",
-				"four" => "this is story four",
-				)
-		$rand_keys = array_rand($array, 1)
-		return $rand_keys;
+				"this is story one",
+				"this is story two",
+				"this is story three",
+				"this is story four",
+				);
+		$rand_key = array_rand($array);
+		$rand_value = $array[$rand_key];
+		return $rand_value;
 		}
 ?>

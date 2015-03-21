@@ -9,11 +9,16 @@
 
 <body>
 	
+	<nav>
+			<div id="topNav">
+				<div id="logo">
+				<h1><a href="../">Ballard Workshop</a></h1>
+			</div>
+	</nav>
 <?php 
 	ini_set('display_errors',1);
 	ini_set('display_startup_errors',1);
 	error_reporting(-1);
-	include '_includes/kriyas-header.php';
 	include '_includes/functions.php';
 	//include '_includes/variables.php';
 ?>
