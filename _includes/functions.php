@@ -34,10 +34,9 @@
 <?php
 		function random_video()
 		{
-			include '_includes/variables.php';
-		$rand_key = array_rand($about_array);
-		$rand_value = $about_array[$rand_key];
-		return $rand_value;
-			// print_r($about_array);
+			include '_includes/video_variables.php';
+			$rand_key = array_rand($video_array);
+			$rand_value = $video_array[$rand_key];
+			return $rand_value;
 		}
 ?>
