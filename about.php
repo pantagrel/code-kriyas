@@ -26,8 +26,8 @@
 
 	<div id="about_page">
 		<?php
-			echo square();
-			echo '<p>.</p><p>'.$_SERVER['HTTP_USER_AGENT'].'</p>';
+			echo about_text();
+			// echo '<p>.</p><p>'.$_SERVER['HTTP_USER_AGENT'].'</p>';
 		?>
 	</div><!-- about_page -->
 

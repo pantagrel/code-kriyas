@@ -21,7 +21,18 @@
 ?>
 
 <?php
-		function square()
+		function about_text()
+		{
+			include '_includes/variables.php';
+		$rand_key = array_rand($about_array);
+		$rand_value = $about_array[$rand_key];
+		return $rand_value;
+			// print_r($about_array);
+		}
+?>
+
+<?php
+		function random_video()
 		{
 			include '_includes/variables.php';
 		$rand_key = array_rand($about_array);
