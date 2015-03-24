@@ -266,6 +266,18 @@ span#inactiveNav{
 	font-family: Georgia, serif;
 }
 
+p.video{
+	  background: none;
+	  padding: 30px 30px 30px 281px;
+	  position: fixed;
+	  font-size: 7em;
+	  font-family: "Cellular"
+}
+
+video{
+	width: 100%;
+}
+
 canvas{
 
 }
