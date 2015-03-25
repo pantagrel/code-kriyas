@@ -5,6 +5,10 @@ _Ballard Workshop's record of leisurely coding._
 =^..^=
 _____
 
+* __032415__ Loading random video and playing continuously.
+
+* __032315__ Optimizing video.
+
 * __032215__ Other questions to bring forward: Is this the right effort? Does this action bring me satisfaction? Why are some actions so hard for some and so easy for others? Right/wrong effort? 
 
 * __032115__ A question to take forward: is this effort helpful? Also, consider video optimization for short looping videos.
