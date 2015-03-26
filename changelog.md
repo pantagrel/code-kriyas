@@ -5,6 +5,8 @@ _Ballard Workshop's record of leisurely coding._
 =^..^=
 _____
 
+* __032515__ Learning about the DOM.  Dipping toe in water.
+
 * __032415__ Loading random video and playing continuously.
 
 * __032315__ Optimizing video.
