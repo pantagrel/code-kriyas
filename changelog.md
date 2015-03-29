@@ -5,6 +5,8 @@ _Ballard Workshop's record of leisurely coding._
 =^..^=
 _____
 
+* __032815__ Is it a kriya without code?
+
 * __032715__ Kimonos.
 
 * __032615__ More learning about the DOM, as well as ideas about how to deal with difficult or aggrivating comments and conversations. I like hearing what the Buddhists have to say about this.
