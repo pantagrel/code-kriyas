@@ -5,7 +5,9 @@ _Ballard Workshop's record of leisurely coding._
 =^..^=
 _____
 
-* __032815__ Is it a kriya without code?
+* __040315__ A: It can be.
+
+* __032815__ Q: Is it a kriya without code?
 
 * __032715__ Kimonos.
 
